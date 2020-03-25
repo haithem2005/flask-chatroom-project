@@ -21,10 +21,10 @@
      let textbox=document.getElementById("message");
          let timer=setTimeout(function(){
              location.reload();
-         },6000)
+         },6000);
          textbox.onkeydown=function(e){
              clearTimeout(timer)
-             setTimeout(function() {
+             timer=setTimeout(function() {
                  location.reload();
              },6000)
          };
